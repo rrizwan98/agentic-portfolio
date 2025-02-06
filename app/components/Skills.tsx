@@ -1,10 +1,10 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Code, Database, Server, Layout, GitBranch, Box, Layers, Cpu, Globe, Workflow, Cloud, MemoryStick } from "lucide-react"
+import { Code, Database, Layout, GitBranch, Layers, Cpu, Workflow, Cloud, MemoryStick } from "lucide-react"
 import AnimatedSectionHeader from "./AnimatedSectionHeader"
 
-const SkillIcon = ({ icon: Icon, color }: { icon: any; color: string }) => (
+const SkillIcon = ({ icon: Icon, color }: { icon: React.ComponentType<{ className?: string }>; color: string }) => (
   <div className={`p-2 rounded-full bg-white dark:bg-gray-800 shadow-lg`}>
     <Icon className={`w-6 h-6 ${color}`} />
   </div>
