@@ -22,6 +22,7 @@ module.exports = {
       },
     ],
     dangerouslyAllowSVG: true,
+    domains: ["www.imghippo.com"],
   },
   // ...existing config...
 }
